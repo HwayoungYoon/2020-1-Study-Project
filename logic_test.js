@@ -1,3 +1,5 @@
+/* 선택한 보기별로 점수줘서 최대값 선택 */
+// 선택한 보기별로 분류
 const calcScore = () => {
     let point_1 = 0;
     let point_2 = 0;
@@ -11,7 +13,7 @@ const calcScore = () => {
     let point_10 = 0;
     let point_11 = 0;
     let point_12 = 0;
-    if (qnaList[0].a == select[0]) { /* 2번[0] 질문 */
+    if (qnaList[0].a == select[0]) {/* 2번[0] 질문 */
         point_2 += qnaList[0].a[select[0]].score;
         point_6 += qnaList[0].a[select[0]].score;
         point_7 += qnaList[0].a[select[0]].score;
@@ -27,7 +29,7 @@ const calcScore = () => {
         point_10 += qnaList[0].a[select[3]].score;
         point_11 += qnaList[0].a[select[3]].score;
         point_12 += qnaList[0].a[select[3]].score;
-    } else if (qnaList[1].a == select[0]) { /* 3번[1] 질문 */
+    } else if (qnaList[1].a == select[0]) {/* 3번[1] 질문 */
         point_5 += qnaList[1].a[select[0]].score;
         point_7 += qnaList[1].a[select[0]].score;
         point_11 += qnaList[1].a[select[0]].score;
@@ -42,7 +44,7 @@ const calcScore = () => {
     } else if (qnaList[1].a == select[2]) {
         point_1 += qnaList[1].a[select[2]].score;
         point_4 += qnaList[1].a[select[2]].score;
-    } else if (qnaList[2].a == select[0]) { /* 4번[2] 질문 */
+    } else if (qnaList[2].a == select[0]) {/* 4번[2] 질문 */
         point_3 += qnaList[2].a[select[0]].score;
         point_4 += qnaList[2].a[select[0]].score;
         point_5 += qnaList[2].a[select[0]].score;
@@ -56,7 +58,7 @@ const calcScore = () => {
         point_7 += qnaList[2].a[select[1]].score;
         point_8 += qnaList[2].a[select[1]].score;
         point_9 += qnaList[2].a[select[1]].score;
-    } else if (qnaList[3].a == select[0]) { /* 5번[3] 질문 */
+    } else if (qnaList[3].a == select[0]) {/* 5번[3] 질문 */
         point_1 += qnaList[3].a[select[0]].score;
         point_2 += qnaList[3].a[select[0]].score;
         point_3 += qnaList[3].a[select[0]].score;
@@ -70,7 +72,7 @@ const calcScore = () => {
         point_9 += qnaList[3].a[select[1]].score;
         point_11 += qnaList[3].a[select[1]].score;
         point_12 += qnaList[3].a[select[1]].score;
-    } else if (qnaList[4].a == select[0]) { /* 6번[4] 질문 */
+    } else if (qnaList[4].a == select[0]) {/* 6번[4] 질문 */
         point_1 += qnaList[4].a[select[0]].score;
         point_2 += qnaList[4].a[select[0]].score;
     } else if (qnaList[4].a == select[1]) {
@@ -87,7 +89,7 @@ const calcScore = () => {
         point_10 += qnaList[4].a[select[3]].score;
     } else if (qnaList[4].a == select[4]) {
         point_5 += qnaList[4].a[select[4]].score;
-    } else if (qnaList[5].a == select[0]) { /* 7번[5] 질문 */
+    } else if (qnaList[5].a == select[0]) {/* 7번[5] 질문 */
         point_4 += qnaList[5].a[select[0]].score;
         point_6 += qnaList[5].a[select[0]].score;
     } else if (qnaList[5].a == select[1]) {
@@ -106,7 +108,7 @@ const calcScore = () => {
         point_10 += qnaList[5].a[select[5]].score;
         point_11 += qnaList[5].a[select[5]].score;
         point_12 += qnaList[5].a[select[5]].score;
-    } else if (qnaList[6].a == select[0]) { /* 8번[6] 질문 */
+    } else if (qnaList[6].a == select[0]) {/* 8번[6] 질문 */
         point_1 += qnaList[6].a[select[0]].score;
         point_2 += qnaList[6].a[select[0]].score;
         point_6 += qnaList[6].a[select[0]].score;
@@ -120,7 +122,7 @@ const calcScore = () => {
         point_3 += qnaList[6].a[select[1]].score;
         point_4 += qnaList[6].a[select[1]].score;
         point_5 += qnaList[6].a[select[1]].score;
-    } else if (qnaList[7].a == select[0]) { /* 9번[7] 질문 */
+    } else if (qnaList[7].a == select[0]) {/* 9번[7] 질문 */
         point_1 += qnaList[7].a[select[0]].score;
         point_2 += qnaList[7].a[select[0]].score;
         point_3 += qnaList[7].a[select[0]].score;
@@ -135,7 +137,7 @@ const calcScore = () => {
         point_10 += qnaList[7].a[select[1]].score;
         point_11 += qnaList[7].a[select[1]].score;
         point_12 += qnaList[7].a[select[1]].score;
-    } else if (qnaList[8].a == select[0]) { /* 10번[8] 질문 */
+    } else if (qnaList[8].a == select[0]) {/* 10번[8] 질문 */
         point_3 += qnaList[8].a[select[0]].score;
         point_5 += qnaList[8].a[select[0]].score;
         point_6 += qnaList[8].a[select[0]].score;
@@ -149,7 +151,7 @@ const calcScore = () => {
         point_8 += qnaList[8].a[select[1]].score;
         point_10 += qnaList[8].a[select[1]].score;
         point_11 += qnaList[8].a[select[1]].score;
-    } else if (qnaList[9].a == select[0]) { /* 11번[9] 질문 */
+    } else if (qnaList[9].a == select[0]) {/* 11번[9] 질문 */
         point_4 += qnaList[9].a[select[0]].score;
         point_11 += qnaList[9].a[select[0]].score;
         point_12 += qnaList[9].a[select[0]].score;
@@ -165,7 +167,7 @@ const calcScore = () => {
         point_5 += qnaList[9].a[select[2]].score;
         point_6 += qnaList[9].a[select[2]].score;
         point_10 += qnaList[9].a[select[2]].score;
-    } else if (qnaList[10].a == select[0]) { /* 12번[10] 질문 */
+    } else if (qnaList[10].a == select[0]) {/* 12번[10] 질문 */
         point_1 += qnaList[10].a[select[0]].score;
         point_2 += qnaList[10].a[select[0]].score;
     } else if (qnaList[10].a == select[1]) {
@@ -189,6 +191,7 @@ const calcScore = () => {
 
 const point = [point_1, point_2, point_3, point_4, point_5, point_6, point_7, point_8, point_9, point_10, point_11, point_12];
 
+//최댓값 계산
 const calcMax = () => {
     let max = 0;
     for(let i = 0; i < point.length; i++){
@@ -198,8 +201,38 @@ const calcMax = () => {
     }
 }
 
-
-
+/* 핵심질문 이용한 if-else문 */
+const calcScore = () => {
+    let point = 0;
+    if (qnaList[1].a == select[2] && qnaList[8].a == select[1]) {/* 어문 */
+        num = 100;
+    } else if (qnaList[8].a == select[1] && qnaList[9].a == select[1]) {/* 역사 */
+        num = 200;
+    } else if (qnaList[4].a == select[3] && (qnaList[5].a == select[3] || qnaList[5].a == select[4])) {/* 상경 */
+        num = 300;
+    } else if (qnaList[1].a == select[2]) {/* 사회과학 */
+        num = 400;
+    } else if (qnaList[2].a == select[0] && qnaList[4].a == select[4] && qnaList[5].a == select[1]) {/* 복지 */
+        num = 500;
+    } else if (qnaList[8].a == select[0]) {/* 복합 */
+        num = 600;
+    } else if ((qnaList[4].a == select[2] || qnaList[5].a == select[2]) && qnaList[8].a == select[0] && qnaList[0].a == select[0]) {/* 코딩 */
+        num = 700;
+    } else if ((qnaList[4].a == select[2] || qnaList[5].a == select[2]) && qnaList[8].a == select[1] && qnaList[0].a == select[1]) {/* 자연 */
+        num = 800;
+    } else if ((qnaList[4].a == select[2] || qnaList[5].a == select[2]) && qnaList[8].a == select[0] && qnaList[0].a == select[2]) {/* 공학 */
+        num = 900;
+    } else if (qnaList[3].a == select[0]) {/* 생체 */
+        num = 1000;
+    } else if (qnaList[4].a == select[1] && qnaList[5].a == select[5] && qnaList[8].a == select[1]) {/* 순수미술 */
+        num = 1100;
+    } else if (qnaList[4].a == select[1] && qnaList[5].a == select[5] && qnaList[8].a == select[0]) {/* 디자인 */
+        num = 1200;
+    } else {/* 랜덤(100,200,300, ... ,1200 중 1개)) */
+        num = ((int)(Math.random()*12) + 1)*100;
+    }
+    return point;
+}
 
 /* if (qnaList[0].a == [0]) {
     point_0 += qnaList[i].a[select[i]].score;
@@ -210,7 +243,15 @@ const calcMax = () => {
 } else {
     point_4 += qnaList[i].a[select[i]].score;
 }
-return num; */
+return num;
+
+const calcScore = () => {
+    let point = 0;
+    for (let i = 0; i < ENDPOINT; i++) {
+        point += qnaList[i].a[select[i]].score;
+    }
+    return point;
+} */
 
 const calcScore = () => {
     let point_1 = 0;
